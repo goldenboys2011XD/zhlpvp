@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroHeroLand PVP</title>
+    <link rel="icon" type="image/x-icon" href="ZeroHeroLand PVP.dev/favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            background-image: url(https://golden-cube.w3spaces.com/images/goldencube_bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set minimum height to fill the viewport */
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+        }
+
+        #ConMSG {
+            border: 5px double beige;
+            padding: 20px;
+            text-align: center;
+            color: #777; /* Lighter gray text color */
+        }
+
+        #AboutPageContent {
+            border: 5px double beige;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px; /* Increase margin to move #AboutPage further down */
+        }
+
+        #AboutPageContent h2 {
+            color: #fff; /* White text color */
+        }
+
+        #AboutPageContent h3 {
+            color: #fff; /* White text color */
+        }
+
+        .products-list {
+            display: none; /* Hide products list initially */
+            color: #fff; /* White text color */
+            border: 5px double beige;
+            padding: 40px;
+            text-align: center;
+            top: 100px; /* Adjusted margin to move Products Page Div towards the top */
+            font-size: 24px; /* Increase font size of product list */
+            position: absolute; /* Position the products list absolutely */
+            left: 20px; /* Position the products list with some padding from the left */
+        }
+
+        .products-list ul {
+            list-style-type: none; /* Remove bullet points from the list */
+            padding: 0;
+        }
+
+        .products-list ul li a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .products-list ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff; /* White text color */
+            padding: 20px 0;
+            text-align: center;
+            width: 100%; /* Full width */
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        #TopNav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        #TopNav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #TopNav a:hover {
+            background-color: #555;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="TopNav">
+    <a href="#AboutPage">About</a>
+    <a href="#" onclick="toggleProducts()">Products</a> <!-- Added onclick event -->
+    <a href="/contact">Contact</a>
+</div>
+
+<div class="wrapper">
+    <div id="ConMSG">
+        <font color="red">
+            <h1>Hello Everyone!</h1>
+            <h2>This site is currently under massive construction and development</h2>
+        </font>
+    </div>
+
+    <div id="AboutPage">
+        <div id="AboutPageContent">
+            <h2>About ZeroHeroLand PVP</h2>
+            <h3>ZeroHeroLand PVP is a Greek minecraft 1.8 PVP Server.
+                While currently a small server, we have ambitious dreams of becoming a larger and more impactful player in the community.
+                Founded by goldenboys2011.</h3>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; ZeroHeroLand PVP 2024 |
+    <a href="#">YouTube</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">Twitter</a> |
+    <a href="#">TikTok</a> |
+    <a href="#">Email</a>
+    <br> Volos, Greece
+</footer>
+
+<script>
+    window.onload = function() {
+        var aboutPage = document.getElementById('AboutPage');
+        aboutPage.style.display = 'block'; // Show About page by default
+    };
+
+    function toggleProducts() {
+        var aboutPage = document.getElementById('AboutPage');
+        var productsList = document.querySelector('.products-list');
+        var underConstruction = document.getElementById('ConMSG');
+
+        if (aboutPage.style.display === 'none') {
+            aboutPage.style.display = 'block'; // Show About page
+            productsList.style.display = 'none'; // Hide products list
+            underConstruction.style.display = 'block'; // Show Under Construction message
+        } else {
+            aboutPage.style.display = 'none'; // Hide About page
+            productsList.style.display = 'block'; // Show products list
+            underConstruction.style.display = 'none'; // Hide Under Construction message
+        }
+    }
+</script>
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2647736633967701" crossorigin="anonymous"></script>
+
+</body>
+</html>
